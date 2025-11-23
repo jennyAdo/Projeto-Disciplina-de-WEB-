@@ -182,10 +182,11 @@ body {
 
 /* Imagens com borda arredondada + sombra */
 #carouselFilmes img {
-  border-radius: 30px;
-  height: 420px;
-  object-fit: cover;
   width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 30px;
+  background-color: #000;
 }
 
 /* Botões do carrossel */

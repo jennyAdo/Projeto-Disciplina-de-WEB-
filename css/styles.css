@@ -39,21 +39,21 @@ body {
   height: 100%;
   z-index: -1;
   opacity: 0.5;
-  background: radial-gradient(
-      circle at 10% 20%,
+  background: radial-gradient(circle at 10% 20%,
       var(--primaria) 0%,
-      transparent 20%
-    ),
+      transparent 20%),
     radial-gradient(circle at 90% 80%, var(--secundaria) 0%, transparent 20%),
     var(--maisEscuro);
   animation: flutuar 6s ease-in-out infinite;
 }
 
 @keyframes flutuar {
+
   0%,
   100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-20px);
   }
@@ -85,6 +85,7 @@ body {
   padding: 0.5rem 0;
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
+
 .menu-link:hover {
   color: #ff00ff;
   text-shadow: 0 0 8px #ff00ff;
@@ -104,6 +105,7 @@ body {
   text-align: center;
   color: #fff;
 }
+
 .cabecalho h1 {
   font-size: 4rem;
   font-weight: 700;
@@ -144,6 +146,7 @@ body {
   text-align: center;
   margin-bottom: 20px;
 }
+
 .sobre-caixa {
   max-width: 600px;
   margin: 60px auto;
@@ -151,7 +154,8 @@ body {
   background: rgba(20, 20, 30, 0.6);
   border-radius: 15px 30px 15px 30px;
   backdrop-filter: blur(12px);
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3), 0 0 40px rgba(255, 0, 255, 0.2); /* brilho colorido */
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3), 0 0 40px rgba(255, 0, 255, 0.2);
+  /* brilho colorido */
   border: 1px solid rgba(0, 255, 255, 0.5);
   color: #e0f7fa;
   font-family: "Orbitron", sans-serif;
@@ -162,6 +166,7 @@ body {
   transform: translateY(-5px);
   box-shadow: 0 0 30px rgba(0, 255, 255, 0.6), 0 0 60px rgba(255, 0, 255, 0.4);
 }
+
 .sobre-paragrafo {
   text-align: center;
   font-size: 1.2rem;
@@ -252,7 +257,8 @@ body {
   background: rgba(20, 20, 30, 0.6);
   border-radius: 15px;
   border: 1px solid rgba(0, 255, 255, 0.5);
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3), 0 0 40px rgba(255, 0, 255, 0.2); /* brilho colorido */
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3), 0 0 40px rgba(255, 0, 255, 0.2);
+  /* brilho colorido */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -292,4 +298,17 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+/* Botões da reserva */
+.btn-neon {
+  background: linear-gradient(45deg, #00ffff, #ff00ff);
+  border: none;
+  color: #dadde4;
+  font-family: "Orbitron", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
 }
